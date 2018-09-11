@@ -1,0 +1,81 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>w1-02</Name>
+    <RootNamespace>w01-02</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fdb214d6-9711-48d6-b159-8cf21bc188cb</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="alt1\css\form.css" />
+    <Content Include="alt1\function_returns_object.html" />
+    <Content Include="alt1\function_using_object.html" />
+    <Content Include="alt1\object_methods.html" />
+    <Content Include="alt1\README.md" />
+    <Content Include="alt1\simple_function.html" />
+    <Content Include="alt2\calc_index.html" />
+    <Content Include="alt2\docker_index.html" />
+    <Content Include="alt2\jasmine-standalone-3.2.1\lib\jasmine-3.2.1\jasmine.css" />
+    <Content Include="alt2\jasmine-standalone-3.2.1\lib\jasmine-3.2.1\jasmine_favicon.png" />
+    <Content Include="alt2\jasmine-standalone-3.2.1\MIT.LICENSE" />
+    <Content Include="alt2\jasmine-standalone-3.2.1\SpecRunner.html" />
+    <Content Include="alt2\listofpersons_index.html" />
+    <Content Include="alt2\README.md" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="alt1\" />
+    <Folder Include="alt1\css\" />
+    <Folder Include="alt1\js\" />
+    <Folder Include="alt2\" />
+    <Folder Include="alt2\jasmine-standalone-3.2.1\" />
+    <Folder Include="alt2\jasmine-standalone-3.2.1\lib\" />
+    <Folder Include="alt2\jasmine-standalone-3.2.1\lib\jasmine-3.2.1\" />
+    <Folder Include="alt2\jasmine-standalone-3.2.1\spec\" />
+    <Folder Include="alt2\jasmine-standalone-3.2.1\src\" />
+    <Folder Include="alt2\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alt1\js\employee.js" />
+    <Compile Include="alt1\js\tasks.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\lib\jasmine-3.2.1\boot.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\lib\jasmine-3.2.1\jasmine-html.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\lib\jasmine-3.2.1\jasmine.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\spec\dockerspec.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\spec\PlayerSpec.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\spec\SpecHelper.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\src\docker.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\src\Player.js" />
+    <Compile Include="alt2\jasmine-standalone-3.2.1\src\Song.js" />
+    <Compile Include="alt2\js\calc.js" />
+    <Compile Include="alt2\js\docker.js" />
+    <Compile Include="alt2\js\listofpersons.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
