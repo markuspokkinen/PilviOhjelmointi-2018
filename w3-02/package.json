@@ -1,9 +1,16 @@
 {
-  "name": "w3-02",
-  "version": "0.0.0",
-  "description": "w3-02",
-  "main": "app.js",
-  "author": {
-    "name": ""
+  "name": "books",
+  "version": "1.0.0",
+  "description": "simple book search to demonstrate correct error handling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark J Tyers",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.2.0",
+    "node-persist": "0.0.8",
+    "request": "^2.67.0"
   }
 }
