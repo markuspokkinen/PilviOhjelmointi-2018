@@ -116,3 +116,8 @@ exports.addNew = function(auth, body) {
   /* And return a success code. */
   return {code: 201, contentType:'application/json', response:{ status:'success', message:'new list added', data: newList }}
 }
+exports.delete = function () {
+	console.log("delete all")
+	lists = [];
+	return { code: 201, contentType: 'application/json', response: { status: 'success', message: 'all lists deleted' } }
+}

@@ -68,6 +68,12 @@ server.put('/lists/:listID', function(req, res) {
 	res.send(data.code, {status: data.status, message: 'this should update the specified resource'})
 	res.end()
 })
+/* delete all from list*/
+server.del('/lists', function (req, res) {
+	const data = lists.delete()
+	res.setHeader('content-type', 'application/json')
+	res.send(data.code, { status: data.response.status, message: data.response.message });
+});
 
 /* The DELETE method removes the resource at the specified URL. */
 server.del('/lists/:listID', function(req, res) {
